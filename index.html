@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Site title -->
+    <title>Checkout</title>
+</head>
+<body>
+    
+    <!-- Page wrapper -->
+    <div id="wrapper">
+        
+        <!-- Skip to content button -->
+        <a href="#main" class="accessibility">Skip to content</a>
+
+        <!-- Header -->
+        <header class="header">
+            
+        </header>
+
+        <!-- Main -->
+        <main>
+
+            <!-- Hero section -->
+            <section class="checkout-section">
+                <!-- Wrapper -->
+                <div class="container">
+                    <!-- Page heading -->
+                    <div class="heading">
+                        <h1>Checkout</h1>
+                        <p>2 items on your cart</p>
+                    </div>
+                    <!-- Wrapper -->
+                    <div class="checkout-cont">
+                        <!-- Checkout form -->
+                        <div class="checkout-form">
+                            <!-- Title of the form -->
+                            <div class="title">
+                                <h2>Billing Details</h2>
+                            </div>
+                            <form method="post">
+                                <!-- Billing form -->
+                                <div class="billing-form">
+                                    <label for="name">First & Last Name</label>
+                                    <input type="text" name="name" id="name" placeholder="i.e. John Doe">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" id="email" placeholder="i.e. john@email.com">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country">
+                                        <option value="USA">United States of America</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="India">India</option>
+                                    </select>
+                                   <div class="wrapper">
+                                        <div class="city__input-field">
+                                            <label for="city">City/State</label>
+                                            <input type="text" name="city" id="city" placeholder="City">
+                                        </div>
+                                        <div class="zipcode__input-field">
+                                            <label for="postalcode">Zip/Postal Code</label>
+                                            <input type="number" name="postalcode" id="postalcode" placeholder="Zip Code">
+                                        </div>
+                                   </div>
+                                </div>
+                                <h3>Payment Method</h3>
+                                <!-- Payment form -->
+                                <div class="payment-form">
+                                    <!-- Card button -->
+                                    <div class="radio-btn">
+                                        <div class="wrapper">
+                                            <input type="radio" name="payment-method" id="cr-dr__card" value="Credit Cards" checked="checked">
+                                            <label for="cr-dr__card">Credit Cards</label>
+                                        </div>
+                                        <div class="pp-logo">
+                                           <img src="./assets/img/cards/all-cards.jpg" alt="cards">
+                                        </div>
+                                    </div>
+                                    <!-- Card form -->
+                                    <div class="pay-form">
+                                        <!-- Card number -->
+                                        <div class="card-nmbr">
+                                            <label for="card-number">Card Number</label>
+                                            <input type="number" name="card number" id="card-number" placeholder="1115 5665 6464 565">
+                                        </div>
+                                       <div class="wrapper">
+                                            <div class="exp-date">
+                                                <label for="exp-date">Expire Date</label>
+                                                <input type="number" name="Expire Date" id="exp-date" placeholder="Month/Year">
+                                            </div>
+                                            <div class="security-code">
+                                                <label for="security-code">Security Code</label>
+                                                <input type="number" name="Security code" id="security-code" placeholder="PIN">
+                                            </div> 
+                                       </div>                                   
+                                    </div>
+                                    <!-- Paypal method -->
+                                    <div class="radio-btn">
+                                        <div class="wrapper">
+                                            <input type="radio" name="payment-method" id="paypal" value="paypal">
+                                            <label for="paypal">Paypal</label>
+                                        </div>
+                                        <div class="pp-logo">
+                                            <img src="./assets/img/cards/PayPal_Logo.png" alt="Paypal">
+                                        </div>
+                                    </div>
+                                    <!-- Paypal form -->
+                                    <div class="pay-form">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" placeholder="John">  
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password" placeholder="Password">                             
+                                    </div>
+                                </div>
+                                <div class="t-c__agreement">
+                                    <input type="checkbox" name="t&c agreement" id="t-c__agreement">
+                                    <label for="t-c__agreement">By clicking the button you agree the<a href="#">Terms and Conditions</a></label>
+                                </div>
+                                <button type="submit">Proceed to checkout</button>
+                            </form>
+                        </div>
+                        <!-- Cart section -->
+                        <div class="cart">
+                            <h3>Order Details</h3>
+                            <div class="cart-cont">
+                                <div class="head">
+                                    <p>Total items</p>
+                                    <p>02 items</p>
+                                </div>
+                                <div class="cart-items">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./assets/img/product/airpod.jpg" alt="airpod">
+                                        </div>
+                                        <div class="body">
+                                            <h4>Apple AirPods Pro...</h4>
+                                            <div class="sub-body">
+                                                <p class="product-item">2 ITEMS</p>
+                                                <p class="price">$280</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="delete-item"></a>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./assets/img/product/airpod.jpg" alt="airpod">
+                                        </div>
+                                        <div class="body">
+                                            <h4>Apple AirPods Pro...</h4>
+                                            <div class="sub-body">
+                                                <p class="product-item">2 ITEMS</p>
+                                                <p class="price">$280</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="delete-item"></a>
+                                    </div>
+                                </div>
+                                <div class="services-charges">
+                                    <p class="service-name">Delivery Fee</p>
+                                    <p class="price free">FREE</p>
+                                </div>
+                                <div class="total-price">
+                                    <p class="total">Total Price</p>
+                                    <p class="price">$560</p>
+                                </div>
+                                <button class="checkout">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Wrapper -->
+            <div class="container"></div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
